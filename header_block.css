@@ -1,0 +1,88 @@
+#header_block {
+    background-color: black;
+}
+.headerbar {
+    background-color: gainsboro;
+    position:fixed;
+    width: 100%;
+}
+.headerbar_warp {
+    width: 1239px;
+    margin: 0 auto;
+    display: flex;
+}
+@media screen and (max-width: 1256px) { 
+    .headerbar_warp {width: 100%;} 
+} 
+.account {
+    display: flex;
+    margin-left : auto;
+}
+.account_button{
+    margin: 6px;
+    color:black;
+}
+
+.logo {
+    width: 1239px;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+@media screen and (max-width: 1256px) { 
+    .logo {width: 100%;} 
+} 
+.header {
+    margin: 0 0 0 12pt;
+}
+
+.tltlename {
+    font-size: 60pt;
+    display: flex;
+    color: white;
+}
+.navfirst {
+    background-color: gainsboro;
+}
+.navfirst_warp {
+    width: 1239px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1256px) { 
+    .navfirst_warp {width: 100%;} 
+} 
+
+ul.menu {
+    width: 1210px;
+    display: flex;
+    padding-inline-start: 0;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1256px) { 
+    ul.menu {width: 100%;} 
+} 
+ul.menu a {
+    background-color: gainsboro;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ul.menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: white;
+    cursor: pointer;
+}
+ul.menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: white;
+}
+ul.menu ul {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px;
+}
+ul.menu li:hover ul{
+    display: block;
+}
