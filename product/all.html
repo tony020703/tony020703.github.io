@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="../header_block.css" />
-        <link rel="stylesheet" type="text/css" href="../leftmenu.css" />
+        <link rel="stylesheet" type="text/css" href="../body_block_mainstyle.css" />
         <title>浪子珈啡</title>
         <style>
             ul {
@@ -14,41 +14,27 @@
                 margin:0;
             }
 
-            .content_inner {
-                width: 100%;
-                margin: 10px;
-            }
-            .content {
-                background-color:white;
-                height:1200px;
-            }
-            .position_info {
-                padding: 15px;
-                margin: 0px 20px 20px 20px;
-            }
-            .position_info a {
-                line-height: 40px;
-                font-size:24px;
-            }
-
             .productlist {
                 width: 100%;
             }
-            .productlist li{
-                float:left;
-                width: 220px;
-                height: 280px;
-                border: 1px dotted #efc7c1;
-                margin-left: 10px;
-                margin-right: 10px;
-                margin-bottom: 30px;
+            .productlist ul {
+                padding-inline-start: 0;
             }
-            .productlist img{
+            .productlist li {
+                float:left;
+                width: 200px;
+                height: 250px;
+                border: 1px dotted #efc7c1;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 50px;
+            }
+            .productlist img {
                 width: 100%;
                 margin-top: 0px;
                 margin-left:0px;
             }
-            .productlist li h3{
+            .productlist li h3 {
                 font-weight: bold;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
@@ -58,8 +44,12 @@
                 margin-top: 5px;
             }
 
-            .productlist li span{
+            .productlist li span {
                 color:orange;
+            }
+            .productlist .product_date {
+                float: right;
+                /*display: none;*/
             }
         </style>
     </head>
@@ -157,23 +147,75 @@
                 </div>
                 <div class="content_inner">
                     <div class="content">
-                        <div class="position_info">
-                            <a herf="#">商品介紹</a>
-                            <a> / 所有商品</a>
+                        <div class="page_bar">
+                            <div class="position_info">
+                                <a herf="#">商品介紹</a>
+                                <a> / 所有商品</a>
+                            </div>
+                            <div class="shop_setting_group">
+                                <div class="shop_setting">
+                                    <span>
+                                        商品排序
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            商品排序
+                                        </li>
+                                        <li>
+                                            上架時間: 由新到舊
+                                        </li>
+                                        <li>
+                                            上架時間: 由舊到新
+                                        </li>
+                                        <li>
+                                            價格: 由高至低
+                                        </li>
+                                        <li>
+                                            價格: 由低至高
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="shop_setting">
+                                    <span>
+                                        每頁顯示 24 個
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="productlist">
                             <ul>
                                 <li>
                                     <img src="../product_img/2207240082999302.jpg">
                                     <h3>衣索比亞古吉安那索拉厭氧發酵日曬處理G1</h3>
-                                    <span>$400</span>	
+                                    <span>$<i class='price'>400</i></span>
+                                    <span class="product_date">2022-07-24 20:00:00</span>
+                                </li>
+                                <li>
+                                    <img src="../product_img/2207240082999302.jpg">
+                                    <h3>衣索比亞古吉安那索拉厭氧發酵日曬處理G2</h3>
+                                    <span>$<i class='price'>450</i></span>
+                                    <span class="product_date">2022-07-24 21:00:00</span>
+                                </li>
+                                <li>
+                                    <img src="../product_img/2207240082999302.jpg">
+                                    <h3>衣索比亞古吉安那索拉厭氧發酵日曬處理G3</h3>
+                                    <span>$<i class='price'>300</i></span>
+                                    <span class="product_date">2022-07-24 23:00:00</span>
+                                </li>
+                                <li>
+                                    <img src="../product_img/2207240082999302.jpg">
+                                    <h3>衣索比亞古吉安那索拉厭氧發酵日曬處理G4</h3>
+                                    <span>$<i class='price'>340</i></span>
+                                    <span class="product_date">2022-07-25 01:00:00</span>
                                 </li>
                             </ul>
                         </div>
+                        
                     </div>
                 </div>
             </div>
             <div style="background-color:white;height:1500px;"></div>
         </div>
+        <script src="../shop_setting.js"></script>
     </body>
 </html>
