@@ -2,7 +2,6 @@ var button = document.getElementsByClassName('shop_setting')[0].getElementsByTag
 var product = document.querySelectorAll('.productlist > ul> li'); 
 var product_len = product.length;
 var price = document.getElementsByTagName('i');
-var date = document.getElementsByClassName('product_date');
 var arr_price=[];
 var arr_date=range(0,product_len);
 var temp = 0;

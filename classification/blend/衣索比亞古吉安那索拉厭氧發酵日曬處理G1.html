@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <link rel="stylesheet" type="text/css" href="../../header_block.css" />
         <link rel="stylesheet" type="text/css" href="../../body_block_mainstyle.css" />
+        <link rel="stylesheet" type="text/css" href="../../product_info.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
         <title>浪子珈啡</title>
         <style>
             ul {
@@ -12,46 +15,6 @@
             }
             body {
                 margin:0;
-            }
-
-            .product_info {
-                width: 100%;
-            }
-            .product_info_left {
-                padding: 10px 20px 10px 20px;
-                width: 45%;
-            }
-            .product_info_left .priduct_img {
-                height: 400px;
-                text-align : center;
-                display: flex;
-
-            }
-            .product_info_left .priduct_img img{
-                width: 100%;
-                max-height: 100%;
-                margin-top: 0px;
-                margin-left:0px;
-                object-fit: scale-down;
-            }
-            .product_info_left .priduct_img_small {
-                height: 100px;
-            }
-            .product_info_left .priduct_img_small ul {
-                float: left;
-                height: 100px;
-                margin: 0px;
-                padding: 0px;
-            }
-            .product_info_left .priduct_img_small ul li {
-                display: flex;
-                height: 100px;
-                width: 100px;
-            }
-            .product_info_left .priduct_img_small img{
-                width: 100%;
-                max-height: 100%;
-                object-fit: scale-down;
             }
         </style>
     </head>
@@ -166,25 +129,69 @@
                         </div>
                         <div class="product_info">
                             <div class="product_info_left">
-                                <div class="priduct_img">
-                                    <img src="../../product_img/1.jpg">
-                                </div>
                                 <div class="priduct_img_small">
                                     <ul>
                                         <li>
-                                            <img src="../../product_img/1.jpg">
+                                            <img class="small_img" src="../../product_img/1.jpg">
+                                            <div class="img_choose"></div>
+                                        </li>
+                                        <li>
+                                            <img class="small_img" src="../../product_img/2.jpg">
+                                            <div></div>
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="priduct_img">
+                                    <img src="../../product_img/1.jpg">
+                                </div>
                             </div>
                             <div class="product_info_right">
-
+                                <div class="product_tittle">
+                                    <h2>
+                                        衣索比亞古吉安那索拉厭氧發酵日曬處理G1
+                                    </h2>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        NT$400
+                                    </span>
+                                </div>
+                                <div class="product_purchase">
+                                    <button type="button">連接買場</button>
+                                </div>
                             </div>
+                        </div>
+                        <div class="product_content">
+                            <hr>
+                            <h2>
+                                商品描述
+                            </h2>
+                            <p>衣索比亞 古吉 安娜索拉 厭氧發酵日曬處理 G1<br>
+                                •	商品敘述:<br>
+                                •	衣索比亞 古吉 安納索拉 處理法五重奏<br>
+                                Ethiopia Guji Ana Sora Quintet<br>
+                                 厭氧發酵日曬處理法<br>
+                                 厭氧發酵蜜處理<br>
+                                 厭氧發酵水洗處理法<br>
+                                 日曬處理法<br>
+                                 水洗處理法<br>
+                                衣索比亞 古吉 安娜索拉 厭氧發酵日曬處理 G1<br>
+                                國家　　衣索比亞 (Ethiopia)<br>
+                                產區　　Oromia Region<br>
+                                　　　　古吉 (Guji Zone)<br>
+                                　　　　安納索拉 (Anasora Woreda)<br>
+                                　　　　Yirba Muda Kebele<br>
+                                海拔　　2200公尺<br>
+                                品種　　衣索比亞古優原生種 (Heirloom)<br>
+                                年雨量 1,400 – 1,850 mm<br>
+                                乾香為莓果、水蜜桃、芒果、橘皮與花香。啜吸時為濃厚的巨峰葡萄、芒果、草莓、<br>
+                                水蜜桃果香風味,伴隨著橘皮、佛手柑與紫羅蘭氣息,結尾帶有木瓜皮香氣與微微苦韻,風味渾厚飽滿且複雜。</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="background-color:white;height:1500px;"></div>
         </div>
+        <script src="../../imgshow_function.js"></script>
     </body>
 </html>
