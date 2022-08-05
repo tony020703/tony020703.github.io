@@ -1,3 +1,6 @@
+#body_block {
+    background-color: whitesmoke;
+}
 .wrapper {
     width: 1239px;
     margin: 0 auto;
@@ -8,6 +11,9 @@
 @media screen and (max-width: 1296px) { 
     .wrapper {width: 100%;padding: 30px 0px;}
 } 
+.introduce{
+    background-color: whitesmoke;
+}
 .leftmenu {
     margin: 10px;
 }
@@ -15,6 +21,7 @@
     width: 180px;
     padding: 15px;
     margin: 0px;
+    background-color: whitesmoke;
 }
 .leftmenu_list ul{
     padding-inline-start: 0;
@@ -36,8 +43,8 @@
     margin: 10px;
 }
 .content {
-    background-color:white;
-    height:1200px;
+    background-color: whitesmoke;
+    min-height:1200px;
 }
 .page_bar {
     display: flex;
