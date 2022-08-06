@@ -159,7 +159,10 @@
     height: 50px;
 }
 .productlist li span {
-    color:orange;                
+    color:black;     
+}
+.productlist i{
+    font-style:normal;
 }
 /* productlist css end*/
 
